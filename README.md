@@ -5,12 +5,12 @@
 HealthyKost adalah Project sederhana berbasis C++ yang dibuat untuk membantu mahasiswa dan anak kost memantau pola makan harian mereka. Program ini mencatat jenis makanan yang dikonsumsi setiap hari, menganalisis tingkat kesehatan berdasarkan kategori makanan, serta memberikan peringatan apabila pola makan cenderung tidak sehat atau kurang variatif. 
 ---
 ## 🧩 Fitur Utama 
-✅ Input jumlah konsumsi makanan harian
-✅ Kategori makanan: sehat, cepat saji, mie instan, gorengan, protein
-✅ Perhitungan skor kesehatan harian
-✅ Deteksi pola makan tidak sehat (peringatan)
-✅ Menyimpan riwayat ke file makan_log.txt
-✅ Menampilkan riwayat makan sebelumnya
+1. Input jumlah konsumsi makanan harian
+2. Kategori makanan: sehat, cepat saji, mie instan, gorengan, protein
+3. Perhitungan skor kesehatan harian
+4. Deteksi pola makan tidak sehat (peringatan)
+5. Menyimpan riwayat ke file makan_log.txt
+6. Menampilkan riwayat makan sebelumnya
 ---
 ## 🔥Anggota Kelompok
 1. RAFIQ GHIFARI
@@ -18,3 +18,4 @@ HealthyKost adalah Project sederhana berbasis C++ yang dibuat untuk membantu mah
 3. SAFFANAH AZZAHRA
 4. ZAHLIAN AKHIANSYAH
 5. CELFI MEYSA AYUNI
+
