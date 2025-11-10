@@ -2,7 +2,7 @@
 # HealthyKost - Pemantau Pola Makan Anak Kost
 
 ## 📘 Deskripsi
-HealthyKost adalah Project sederhana berbasis C++ yang dibuat untuk membantu mahasiswa dan anak kost memantau pola makan harian mereka. Program ini mencatat jenis makanan yang dikonsumsi setiap hari, menganalisis tingkat kesehatan berdasarkan kategori makanan, serta memberikan peringatan apabila pola makan cenderung tidak sehat atau kurang variatif. 
+HealthyKost adalah Projek sederhana berbasis C++ yang dibuat untuk membantu mahasiswa dan anak kost memantau pola makan harian mereka. Program ini mencatat jenis makanan yang dikonsumsi setiap hari, menganalisis tingkat kesehatan berdasarkan kategori makanan, serta memberikan peringatan apabila pola makan cenderung tidak sehat atau kurang variatif.
 ---
 ## 🧩 Fitur Utama 
 1. Input jumlah konsumsi makanan harian
@@ -18,4 +18,5 @@ HealthyKost adalah Project sederhana berbasis C++ yang dibuat untuk membantu mah
 3. SAFFANAH AZZAHRA
 4. ZAHLIAN AKHIANSYAH
 5. CELFI MEYSA AYUNI
+
 
