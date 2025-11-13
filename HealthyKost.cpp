@@ -15,7 +15,7 @@ using namespace std;
 
 // Bagian 5: Penyimpanan & Riwayat
 void tambahHistory(const string &isi) {
-ofstream file(".txt", ios::app)
+ofstream file("makan_log.txt", ios::app)
 if (!file) {
 cout << "Gagal membuka file" << endl;
 return;
@@ -25,7 +25,7 @@ file.close();
 }
 
 void tampilHistory() {
-ifstream file(".txt");
+ifstream file("makan_log.txt");
 if (!file) {
 cout << "Belum ada history" << endl;
 return;
@@ -38,7 +38,7 @@ file.close();
 }
 
 void hapusHistory() {
-ofstream file(".txt", ios::trunc);
+ofstream file("makan_log.txt", ios::trunc);
 file.close();
 }
 
