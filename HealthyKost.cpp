@@ -44,8 +44,31 @@ file.close();
 
 // Fungsi utama
 int main() {
+    int pilihan;
 
-   
+    do {
+        cout << "=== PROGRAM TRACKING MAKAN ANAK KOST ===" << endl;
+        cout << "1. Input makan hari ini" << endl;
+        cout << "2. Lihat riwayat makan" << endl;
+        cout << "3. Keluar" << endl;
+        cout << "Pilih menu: ";
+        cin >> pilihan;
+
+        if (pilihan == 1) {
+            inputMakan();
+        }
+        else if (pilihan == 2) {
+            tampilkanRiwayat();
+        }
+        else if (pilihan == 3) {
+            cout << endl << "Terima kasih telah menggunakan program." << endl;
+        }
+        else {
+            cout << endl << "Pilihan tidak valid." << endl;
+        }
+
+    } while (pilihan != 3);
+
     return 0;
 }
 
