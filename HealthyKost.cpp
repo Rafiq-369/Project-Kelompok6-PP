@@ -14,32 +14,33 @@ using namespace std;
 // Bagian 4: Sistem Peringatan
 
 // Bagian 5: Penyimpanan & Riwayat
-void tambahHistory(const string &isi) {
-ofstream file("makan_log.txt", ios::app)
-if (!file) {
-cout << "Gagal membuka file" << endl;
-return;
+void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {
+ofstream file("Riwayat.txt", ios::app);
+file << "Jumlah makan: " << jumlah << endl;
+file << "Kategori: ";
+for (int i = 0; i < jumlah; i++) {
+file << kategori[i] << " ";
 }
-file << isi << endl;
+file << endl;
+file << "Skor kesehatan: " << status << endl;
+file << "Pengingat: " << warning << endl;
+file << "-----------------------------------------" << endl;
 file.close();
 }
 
-void tampilHistory() {
-ifstream file("makan_log.txt");
-if (!file) {
-cout << "Belum ada history" << endl;
+void tampilkanRiwayat() {
+ifstream readFile("Riwayat.txt");
+if (!readFile) {
+cout << endl << "Belum ada riwayat tersimpan." << endl;
 return;
 }
+
+cout << endl << "=== RIWAYAT MAKAN ===" << endl << endl;
 string line;
-while (getline(file, line)) {
+while (getline(readFile, line)) {
 cout << line << endl;
 }
-file.close();
-}
-
-void hapusHistory() {
-ofstream file("makan_log.txt", ios::trunc);
-file.close();
+readFile.close();
 }
 
 // Fungsi utama
