@@ -1,6 +1,10 @@
 # Mini-Project-Kelompok-6
 # HealthyKost - Pemantau Pola Makan Anak Kost
 ---
+## 🔍 Studi Kasus
+Mahasiswa baru dan anak kost sering menghadapi pola makan yang tidak teratur akibat penyesuaian dengan lingkungan baru, keterbatasan waktu, serta kebiasaan menghemat pengeluaran. Kondisi ini menyebabkan sebagian dari mereka melewatkan waktu makan, mengonsumsi makanan instan secara berlebihan, atau tidak memperhatikan keberagaman nutrisi sehari-hari. Pola makan seperti ini berpotensi menurunkan energi, fokus belajar, dan kesehatan secara umum. Berdasarkan permasalahan tersebut, proyek ini dibuat untuk menyediakan solusi sederhana berupa program pelacak kebiasaan makan harian. Program membantu pengguna mencatat makanan apa saja yang dikonsumsi serta memantau apakah pola makan mereka sudah cukup teratur dan bervariasi.
+
+---
 ## 📘 Deskripsi
 HealthyKost adalah aplikasi sederhana berbasis C++ yang dibuat untuk membantu mahasiswa dan anak kost memantau pola makan harian mereka. Program ini mencatat jenis makanan yang dikonsumsi setiap hari, menganalisis tingkat kesehatan berdasarkan kategori makanan, serta memberikan peringatan apabila pola makan cenderung tidak sehat atau kurang variatif.
 
@@ -20,6 +24,7 @@ HealthyKost adalah aplikasi sederhana berbasis C++ yang dibuat untuk membantu ma
 3. SAFFANAH AZZAHRA
 4. ZAHLIAN AKHIANSYAH
 5. CELFI MEYSA AYUNI
+
 
 
 
