@@ -3,6 +3,44 @@
 #include <string>
 using namespace std;
 
+void inputMakan() {
+    int jumlah;
+    cout << endl << "Masukkan jumlah makan hari ini: ";
+    cin >> jumlah;
+
+    int kategori[50];
+    cout << endl;
+    cout << "1. Makanan Sehat (+3)" << endl;
+    cout << "2. Cepat Saji (-1)" << endl;
+    cout << "3. Mie Instan (-2)" << endl;
+    cout << "4. Gorengan (-1)" << endl;
+    cout << "5. Protein (+2)" << endl;
+
+    for (int i = 0; i < jumlah; i++) {
+        cout << "Makanan ke-" << i + 1 << " (1-5): ";
+        cin >> kategori[i];
+    }
+
+    int skor = hitungSkor(kategori, jumlah);
+    string status = tentukanStatus(skor);
+    string warning = buatPeringatan(jumlah, kategori, skor);
+
+    cout << endl << "=== Ringkasan Makan Hari Ini ===" << endl;
+    cout << "Jumlah makan: " << jumlah << endl;
+    cout << "Kategori makan: ";
+    for (int i = 0; i < jumlah; i++) {
+        cout << kategoriMakan(kategori[i]) << " | ";
+    }
+    cout << endl;
+    cout << "Skor kesehatan: " << skor << endl;
+    cout << "Status: " << status << endl;
+    cout << "Peringatan:" << endl << warning;
+
+    simpanKeFile(jumlah, kategori, skor, status, warning);
+
+    cout << endl << "Data berhasil disimpan ke Riwayat.txt" << endl;
+}
+
 string kategoriMakan(int k) {
     switch (k) {
         case 1: return "Makanan Sehat";
