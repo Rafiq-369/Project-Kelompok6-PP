@@ -85,6 +85,38 @@ void tampilkanRiwayat() {
 // Bagian Analisis Kesehatan Sederhana
 
 // Bagian Sistem Peringatan
+string buatPeringatan(int jumlah, int kategori[], int skor) {
+    int instanCount = 0;
+    bool kategoriPernah[6] = { false };
+
+    for (int i = 0; i < jumlah; i++) {
+        if (kategori[i] == 3) instanCount++;
+        if (kategori[i] >= 1 && kategori[i] <= 5) kategoriPernah[kategori[i]] = true;
+    }
+
+    string warning = "";
+
+    if (jumlah <= 2)
+        warning += "- Makannya yang teratur ya..\n";
+
+    if (instanCount >= jumlah - 1)
+        warning += "- Mie instannya lain kali dikurangi.\n";
+
+    int variasi = 0;
+    for (int i = 1; i <= 5; i++) {
+        if (kategoriPernah[i]) variasi++;
+    }
+    if (variasi <= 1)
+        warning += "- Pola makannya lain kali lebih bervariatif.\n";
+
+    if (skor <= 0)
+        warning += "- Hari ini pola makanmu kurang sehat.\n";
+
+    if (warning == "")
+        warning = "- Tidak ada peringatan.\n";
+
+    return warning;
+}
 
 // Bagian Input Makanan Harian
 
