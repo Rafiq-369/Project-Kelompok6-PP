@@ -64,34 +64,38 @@ string tentukanStatus(int skor) {
 }
 
 // Bagian Sistem Peringatan
+// Memberikan beberapa pesan peringatan sesuai pola makan hari ini
 string buatPeringatan(int jumlah, int kategori[], int skor) {
-    int instanCount = 0;
-    bool kategoriPernah[6] = { false };
+    int instanCount = 0;          // Menghitung berapa kali makan mie instan
+    bool kategoriPernah[6] = { false };   // Menyimpan jenis makanan apa saja yang dimakan
 
+    // Menganalisis semua makanan yang dimakan hari ini.
     for (int i = 0; i < jumlah; i++) {
-        if (kategori[i] == 3) instanCount++;
-        if (kategori[i] >= 1 && kategori[i] <= 5) kategoriPernah[kategori[i]] = true;
+        if (kategori[i] == 3) instanCount++;        //untuk menghitung berapa kali user makan mie instan
+        if (kategori[i] >= 1 && kategori[i] <= 5) kategoriPernah[kategori[i]] = true;   //Mencatat kategori makanan apa saja yang pernah dimakan untuk menghitung variasi
     }
 
     string warning = "";
 
-    if (jumlah <= 2)
+    // Jika makan cuma 1–2 kali
+    if (jumlah <= 2)   
         warning += "- Makannya yang teratur ya..\n";
-
+ 
+        // Jika hampir semua makanan adalah mie instan
     if (instanCount >= jumlah - 1)
         warning += "- Mie instannya lain kali dikurangi.\n";
 
-    int variasi = 0;
+    int variasi = 0;       // Menghitung variasi makanan
     for (int i = 1; i <= 5; i++) {
         if (kategoriPernah[i]) variasi++;
     }
-    if (variasi <= 1)
+    if (variasi <= 1)      //jika variasi sangat sedikit
         warning += "- Pola makannya lain kali lebih bervariatif.\n";
 
-    if (skor <= 0)
+    if (skor <= 0)         // jika keseluruhan skor harian buruk
         warning += "- Hari ini pola makanmu kurang sehat.\n";
 
-    if (warning == "")
+    if (warning == "")     //jika tidak ada peringatan sama sekali
         warning = "- Tidak ada peringatan.\n";
 
     return warning;
