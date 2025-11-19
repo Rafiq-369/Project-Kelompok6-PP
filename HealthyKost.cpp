@@ -3,47 +3,25 @@
 #include <string>
 using namespace std;
 
-//pengerjaan projek ini akan bibagi menjadi beberapa bagian 
-
-// Bagian 1: Menu & Navigasi
-
-// Bagian 2: Input Makanan Harian
-
-// Bagian 3: Analisis Pola Makan
-
-// Bagian 4: Sistem Peringatan
-
-// Bagian 5: Penyimpanan & Riwayat
-void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {
-ofstream file("Riwayat.txt", ios::app);
-file << "Jumlah makan: " << jumlah << endl;
-file << "Kategori: ";
-for (int i = 0; i < jumlah; i++) {
-file << kategori[i] << " ";
+string kategoriMakan(int k) {
+    switch (k) {
+        case 1: return "Makanan Sehat";
+        case 2: return "Cepat Saji";
+        case 3: return "Mie Instan";
+        case 4: return "Gorengan";
+        case 5: return "Protein";
+        default: return "Tidak Diketahui";
+    }
 }
-file << endl;
-file << "Skor kesehatan: " << status << endl;
-file << "Pengingat: " << warning << endl;
-file << "-----------------------------------------" << endl;
-file.close();
-}
+// Bagian Penyimpanan Riwayat Makan
 
-void tampilkanRiwayat() {
-ifstream readFile("Riwayat.txt");
-if (!readFile) {
-cout << endl << "Belum ada riwayat tersimpan." << endl;
-return;
-}
+// Bagian Analisis Kesehatan Sederhana
 
-cout << endl << "=== RIWAYAT MAKAN ===" << endl << endl;
-string line;
-while (getline(readFile, line)) {
-cout << line << endl;
-}
-readFile.close();
-}
+// Bagian Sistem Peringatan
 
-// Fungsi utama
+// Bagian Input Makanan Harian
+
+// Bagian Menu & Navigasi 
 int main() {
     int pilihan;
 
@@ -72,4 +50,3 @@ int main() {
 
     return 0;
 }
-
