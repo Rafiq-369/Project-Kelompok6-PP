@@ -1,1 +1,8 @@
 
+Jumlah makan: 4
+Kategori: 2 5 1 3 
+Skor kesehatan: 2
+Status: Cukup Sehat
+Pengingat: - Tidak ada peringatan.
+
+-----------------------------------------
