@@ -18,7 +18,7 @@ void simpanKeFile(int jumlah, int kategori[], int skor, string status, string wa
     ofstream file("Riwayat.txt", ios::app);    // membuka file, kemudian menulis dalam file - pen untuk menambah data ke file tampa menimpa file lama
     file << "Jumlah makan: " << jumlah << endl;
     file << "Kategori: ";
-    for (int i = 0; i < jumlah; i++) {
+    for (int i = 0; i < jumlah; i++) {    // menambahkan setiap kategori dalam satu baris
         file << kategori[i] << " ";
     }
     file << endl;
