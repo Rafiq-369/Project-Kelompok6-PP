@@ -15,7 +15,7 @@ string kategoriMakan(int k) {        //fungsi kategori makanan untuk mengubah an
 }
 // Bagian Penyimpanan Riwayat Makan
 void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {    // fungsi untuk meniympan data makanan ke file
-    ofstream file("Riwayat.txt", ios::app);    // membuka file, kemudian menulis dalam file - pen untuk menambah data ke file tampa menimpa file lama
+    ofstream file("Riwayat.txt", ios::app);    // membuka file, kemudian menulis dalam file // pen untuk menambah data ke file tampa menimpa file lama
     file << "Jumlah makan: " << jumlah << endl;
     file << "Kategori: ";
     for (int i = 0; i < jumlah; i++) {    // menambahkan setiap kategori dalam satu baris
@@ -58,7 +58,7 @@ int hitungSkor(int kategori[], int jumlah) {    // fungsi untuk menghitung jumla
 }
 
 string tentukanStatus(int skor) {             // fungsi untuk menentukan status kesehatan makan hari itu
-    if (skor >= 5) return "Sangat Sehat";        // lebih atau sama 5 = sangat sehat
+    if (skor >= 5) return "Sangat Sehat";        // lebih atau sama 5 = sangat sehat // return untuk mengembalikan nilai sangat sehat
     else if (skor >= 1) return "Cukup Sehat";    // lebih atau sama 1 = cukup sehat
     return "Kurang Sehat";                       // kurang dari 1 = kurang sehat
 }
