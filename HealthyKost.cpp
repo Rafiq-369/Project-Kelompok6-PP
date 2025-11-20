@@ -15,7 +15,7 @@ string kategoriMakan(int k) {        //fungsi kategori makanan untuk mengubah an
 }
 // Bagian Penyimpanan Riwayat Makan
 void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {    // fungsi untuk meniympan data makanan ke file
-    ofstream file("Riwayat.txt", ios::app);            // membuka file, kemudian menulis
+    ofstream file("Riwayat.txt", ios::app);    // membuka file, kemudian menulis dalam file - pen untuk menambah data ke file tampa menimpa file lama
     file << "Jumlah makan: " << jumlah << endl;
     file << "Kategori: ";
     for (int i = 0; i < jumlah; i++) {
