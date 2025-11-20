@@ -143,7 +143,7 @@ int main() {
     int pilihan;
 
     do {
-        cout << "=== PROGRAM TRACKING MAKAN ANAK KOST ===" << endl;  //pilihan menu / navigasi
+        cout << "\n=== PROGRAM TRACKING MAKAN ANAK KOST ===" << endl;  //pilihan menu / navigasi
         cout << "1. Input makan hari ini" << endl;
         cout << "2. Lihat riwayat makan" << endl;
         cout << "3. Keluar" << endl;
