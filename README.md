@@ -14,7 +14,7 @@ HealthyKost adalah aplikasi sederhana berbasis C++ yang dibuat untuk membantu ma
 2. Kategori makanan: sehat, cepat saji, mie instan, gorengan, protein
 3. Perhitungan skor kesehatan harian
 4. Deteksi pola makan tidak sehat (peringatan)
-5. Menyimpan riwayat ke file makan_log.txt
+5. Menyimpan riwayat ke file Riwayat.txt
 6. Menampilkan riwayat makan sebelumnya
 
 ---
@@ -24,6 +24,7 @@ HealthyKost adalah aplikasi sederhana berbasis C++ yang dibuat untuk membantu ma
 3. SAFFANAH AZZAHRA
 4. ZAHLIAN AKHIANSYAH
 5. CELFI MEYSA AYUNI
+
 
 
 
