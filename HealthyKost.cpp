@@ -1,11 +1,11 @@
 #include <iostream>
-#include <fstream>
+#include <fstream> // operasi file (membaca dan menulis  file)
 #include <string>
 using namespace std;
 
 string kategoriMakan(int k) {        //fungsi kategori makanan untuk mengubah angka menjadi jenis kategori
     switch (k) {
-        case 1: return "Makanan Sehat";
+        case 1: return "Makanan Sehat";    // jika k=1, maka kembalikan "makanan sehat"
         case 2: return "Cepat Saji";
         case 3: return "Mie Instan";
         case 4: return "Gorengan";
@@ -14,8 +14,8 @@ string kategoriMakan(int k) {        //fungsi kategori makanan untuk mengubah an
     }
 }
 // Bagian Penyimpanan Riwayat Makan
-void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {    // fungsi menyimpam riwayat
-    ofstream file("Riwayat.txt", ios::app);            // membuka file
+void simpanKeFile(int jumlah, int kategori[], int skor, string status, string warning) {    // fungsi untuk meniympan data makanan ke file
+    ofstream file("Riwayat.txt", ios::app);            // membuka file, kemudian menulis
     file << "Jumlah makan: " << jumlah << endl;
     file << "Kategori: ";
     for (int i = 0; i < jumlah; i++) {
