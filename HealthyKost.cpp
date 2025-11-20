@@ -105,7 +105,7 @@ void inputMakan() {
     cout << endl << "Masukkan jumlah makan hari ini: ";
     cin >> jumlah;        // input jumlah makan hari itu
 
-    int kategori[50];
+    int kategori[50];    // deklarasi array dan menampilkan kategori
     cout << endl;        
     cout << "1. Makanan Sehat (+3)" << endl;
     cout << "2. Cepat Saji (-1)" << endl;
@@ -123,7 +123,7 @@ void inputMakan() {
     string warning = buatPeringatan(jumlah, kategori, skor);    // menentukan peringatan
 
     cout << endl << "=== Ringkasan Makan Hari Ini ===" << endl;    
-    cout << "Jumlah makan: " << jumlah << endl;
+    cout << "Jumlah makan: " << jumlah << endl;    // menampilkan hasil ringkasan jumlah makan
     cout << "Kategori makan: ";                                    
     for (int i = 0; i < jumlah; i++) {
         cout << kategoriMakan(kategori[i]) << " | ";
